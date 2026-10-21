@@ -48,6 +48,7 @@ public class TransactionController {
     public String delete(@PathVariable Long id) {
 
         service.delete(id);
+        System.out.println("Transaction with ID deleted  successfully");
 
         return "Transaction deleted successfully";
     }
